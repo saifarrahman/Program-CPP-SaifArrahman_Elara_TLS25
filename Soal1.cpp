@@ -1,32 +1,32 @@
 #include <iostream>
 using namespace std;
 
-int sisa, bagi, bilangan,n;
+int sisa, bagi, angka,n;
 int x=0;
 int a = 0;
 
 char y;
 
-int balikkan(int bilangan){
+int balikkan(int angka){
     x = 0;
     bagi = 1;
     sisa = 0;
-    if (bilangan > 0){
+    if (angka > 0){
         while (bagi > 0){
-            bagi = bilangan / 10;
-            sisa = bilangan % 10;
+            bagi = angka / 10;
+            sisa = angka % 10;
             x = x*10 + sisa;
-            bilangan = bagi;
+            angka = bagi;
         }
-    }else if(bilangan == 0){
+    }else if(angka == 0){
         x = 0;
     }else{
-        bilangan = bilangan * -1;
+        angka = angka * -1;
         while (bagi > 0){
-            bagi = bilangan /10;
-            sisa = bilangan % 10;
+            bagi = angka /10;
+            sisa = angka % 10;
             x = x*10 + sisa;
-            bilangan = bagi;
+            angka = bagi;
         }
         x = x * -1;
     }
